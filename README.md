@@ -7,7 +7,8 @@ With this repository it takes 5 minutes to set up Vim as a powerful Python code 
 ## Features 
 To avoid bloat, I have tried to keep the most essential features for Python coding. 
 These are features that I reach for on a regular (daily) basis. 
-*Language Help*
+
+**Language Help**
 - Code Navigation - go to definition, references, type definition, implementation
 - Linting & Diagnostics - static type checking, errors, warnings
 - Intellisense auto-complete - recommend variables in scope, object methods, function parameters, 
@@ -16,7 +17,7 @@ These are features that I reach for on a regular (daily) basis.
 - Visual debugging - (as opposed to command line) debug with variables, call stack, and step through code etc. 
 - Pythonic Folding and indentation - Fold classes, functions
 
-*General goodness*
+**General goodness**
 - Fuzzy file (name) search - open files by partially matching with file names
 - Fuzzy full-text search - search for arbitrary patterns in files
 - File tree - visualize the directory tree and open files
