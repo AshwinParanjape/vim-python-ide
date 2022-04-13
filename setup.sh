@@ -10,3 +10,5 @@ cat nerdtree.vimrc >> ~/.vimrc
 # cat ale.vimrc >> ~/.vimrc
 cat coc.vimrc >> ~/.vimrc
 # cat black.vimrc >> ~/.vimrc
+vim -c 'PlugInstall | qall'
+vim -c 'CocInstall -sync coc-json coc-html|qall'

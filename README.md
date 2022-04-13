@@ -25,7 +25,11 @@ These are features that I reach for on a regular (daily) basis.
 ## Setup
 If you want all of these features, and don't mind starting vimrc from scratch, simply clone this repository and run `bash setup.sh`. *It will overwrite your .vimrc, but save the old one as .vimrc.backup .* This is done to automate installation while avoiding a clash with the previous setup. 
 
-It uses [Plug](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) as the plugin manager and has a separate vimrc file with keybindings/configurations corresponding to each plugin that you can customize. You can even exclude the plugin and the corresponding vimrc file if you don't want to use it. If you fork this repo, and push your customizations, you can easily setup vim anywhere (e.g. friend's computer, servers)
+It uses [Plug](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) as the plugin manager and has a separate vimrc file with keybindings/configurations corresponding to each plugin that you can customize. You can even exclude the plugin and the corresponding vimrc file if you don't want to use it. If you fork this repo, and push your customizations, you can easily setup vim anywhere (e.g. friend's computer, servers). The setup script will automatically install the vim plugins and coc extensions.
+
+For full text search, I like using ripgrep (rg), a fast regex search written in Rust, for full text serach, (exposed as `:Rg` via fzf). To install ripgrep on your system follow these [installation instructions](https://github.com/BurntSushi/ripgrep#installation).
+
+The installation script adds the default keybindings for each package (for e.g. `coc.vimrc`). But feel free to edit them and make them your own. Each plugin has good documentation on how to update the keybindings.
 
 ## Plugins (a.k.a. what's being installed)
 We will use the following plugins 
@@ -49,21 +53,3 @@ Some of the keybindings would misfire, and I often had to google "how to do X in
 Meanwhile, a lot had happened in vim land over the last four years, most importantly appearence of projects like CoC, Ale and Vimspector, 
 which brought most of the useful IDE like features back to Vim. And thus I decided to create a Vim setup for myself. 
 It took me about a day, but I feel satisfied with the development experience and increased my coding/code-manipulation speed drastically. 
-
-## Overview
-Fuzzy file search
-Fuzzy full-text search
-
-Intellisense, autocomplete, code jumping
-
-File tree
-Debug support
-
-Git integration
-indendation and folding
-
-
-
-
- 
-
