@@ -24,6 +24,13 @@ These are features that I reach for on a regular (daily) basis.
 - Easy git operation - list unstaged files, compare diffs, stage files with one keystroke
 
 ## Setup
+### Install prerequisites
+#### Vim with Python 3 support
+This is required for vimspector. For Mac OS, `brew install vim`. For debian/ubuntu use the provided script `bash install_vim_debian.sh`. 
+#### Node
+For MacOS `brew install node`. For debian/ubuntu use the provided script `bash install_node_debian.sh`
+
+### Installing vim plugins and configuration
 If you want all of these features, and don't mind starting vimrc from scratch, simply clone this repository and run `bash setup.sh`. *It will overwrite your .vimrc, but save the old one as .vimrc.backup .* This is done to automate installation while avoiding a clash with the previous setup. 
 
 It uses [Plug](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) as the plugin manager and has a separate vimrc file with keybindings/configurations corresponding to each plugin that you can customize. You can even exclude the plugin and the corresponding vimrc file if you don't want to use it. If you fork this repo, and push your customizations, you can easily setup vim anywhere (e.g. friend's computer, servers). The setup script will automatically install the vim plugins and coc extensions.
