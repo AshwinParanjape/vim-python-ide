@@ -23,13 +23,21 @@ These are features that I reach for on a regular (daily) basis.
 - Easy git operation - list unstaged files, compare diffs, stage files with one keystroke
 
 ## Setup
+1 - You'll need vim compiled with Python 3 support. For MacOS, `brew install vim`, for linux you can compile from sources. 
 If you want all of these features, and don't mind starting vimrc from scratch, simply clone this repository and run `bash setup.sh`. *It will overwrite your .vimrc, but save the old one as .vimrc.backup .* This is done to automate installation while avoiding a clash with the previous setup. 
+
 
 It uses [Plug](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) as the plugin manager and has a separate vimrc file with keybindings/configurations corresponding to each plugin that you can customize. You can even exclude the plugin and the corresponding vimrc file if you don't want to use it. If you fork this repo, and push your customizations, you can easily setup vim anywhere (e.g. friend's computer, servers). The setup script will automatically install the vim plugins and coc extensions.
 
 For full text search, I like using ripgrep (rg), a fast regex search written in Rust, for full text serach, (exposed as `:Rg` via fzf). To install ripgrep on your system follow these [installation instructions](https://github.com/BurntSushi/ripgrep#installation).
 
 The installation script adds the default keybindings for each package (for e.g. `coc.vimrc`). But feel free to edit them and make them your own. Each plugin has good documentation on how to update the keybindings.
+
+### Color scheme
+Most default terminals come with just 16 colors but provide the specify true colors corresponding to them. Most color schemes for vim however, use truecolors and only work properly with GUI vim (Gvim, NeoVIM etc.). If they use colors outside the 16 defined for the terminal, then it leads to unreadable mess. Many color schemes however provide the ability to use just 16 colors and provide a mapping from tehese 16 colors to truecolors, the caveat being that you need to configure your terminal (emulator). I've used the solarized color scheme along with a mapping for the Mac terminal. 
+To get set the terminal colors to solarized, `git clone https://github.com/tomislav/osx-terminal.app-colors-solarized.git` and import a `.terminal` file into preferences. 
+The `setup.sh` script will take care of setting the color scheme and activating it. 
+
 
 ## Plugins (a.k.a. what's being installed)
 We will use the following plugins 
