@@ -11,7 +11,8 @@ cat nerdtree.vimrc >> ~/.vimrc
 # cat ale.vimrc >> ~/.vimrc
 cat coc.vimrc >> ~/.vimrc
 cat indent.vimrc >> ~/.vimrc
-cat colorscheme.vimrc >> ~/.vimrc
+cat everforest.vimrc >> ~/.vimrc
+# cat colorscheme.vimrc >> ~/.vimrc
 # cat black.vimrc >> ~/.vimrc
 
 vim -c 'PlugInstall | qall'
