@@ -19,6 +19,7 @@ sudo apt remove vim-tiny vim-common vim-gui-common vim-nox
 cd ~
 git clone https://github.com/vim/vim.git
 cd vim
+git checkout tags/v9.0.0000
 make clean distclean
 ./configure --with-features=huge \
             --enable-multibyte \
