@@ -14,7 +14,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 "Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'psf/black', { 'branch': 'stable' }
+Plug 'psf/black', { 'branch': 'stable' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'puremourning/vimspector'
