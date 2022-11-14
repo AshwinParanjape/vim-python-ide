@@ -37,6 +37,7 @@ If you want all of these features, and don't mind starting vimrc from scratch, s
 It uses [Plug](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) as the plugin manager and has a separate vimrc file with keybindings/configurations corresponding to each plugin that you can customize. You can even exclude the plugin and the corresponding vimrc file if you don't want to use it. If you fork this repo, and push your customizations, you can easily setup vim anywhere (e.g. friend's computer, servers). The setup script will automatically install the vim plugins and coc extensions.
 
 For full text search, I like using ripgrep (rg), a fast regex search written in Rust, for full text serach, (exposed as `:Rg` via fzf). To install ripgrep on your system follow these [installation instructions](https://github.com/BurntSushi/ripgrep#installation).
+For Debian `sudo apt-get install ripgrep`
 
 The installation script adds the default keybindings for each package (for e.g. `coc.vimrc`). But feel free to edit them and make them your own. Each plugin has good documentation on how to update the keybindings.
 
