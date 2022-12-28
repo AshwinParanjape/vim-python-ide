@@ -16,7 +16,6 @@ sudo apt remove vim vim-runtime gvim
 sudo apt remove vim-tiny vim-common vim-gui-common vim-nox
 
 # Once everything is installed, getting the source is easy.
-cd ~
 git clone https://github.com/vim/vim.git
 cd vim
 git checkout tags/v9.0.0000
@@ -37,7 +36,7 @@ make clean distclean
 # Use make to install.
 # make VIMRUNTIMEDIR=/usr/local/share/vim/vim90/
 
-cd ~/vim
+#cd ~/vim
 sudo make install
 
 # Set vim as your default editor with update-alternatives
