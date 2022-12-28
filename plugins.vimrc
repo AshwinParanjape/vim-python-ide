@@ -19,6 +19,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'puremourning/vimspector'
 Plug 'sainnhe/everforest'
+Plug 'jpalardy/vim-slime'
+Plug 'vim-airline/vim-airline'
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 
 call plug#end()
 

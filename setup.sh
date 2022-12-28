@@ -1,5 +1,5 @@
 bash install_plug.sh
-bash install_solarized_flattened.sh
+#bash install_solarized_flattened.sh
 
 cat ~/.vimrc >> ~/.vimrc.backup
 : > ~/.vimrc
@@ -15,10 +15,12 @@ cat everforest.vimrc >> ~/.vimrc
 cat coc.vimrc >> ~/.vimrc
 # cat colorscheme.vimrc >> ~/.vimrc
 # cat black.vimrc >> ~/.vimrc
+cat slime.vimrc >> ~/.vimrc
+cat pydocstring.vimrc >> ~/.vimrc
 
 cat vimspector.vimrc >> ~/.vimrc
 vim -c 'PlugInstall | qall'
-vim -c 'CocInstall -sync coc-pyright coc-json coc-html|qall'
+vim -c 'CocInstall coc-pyright coc-json coc-html'
 
 cd ~/.vim/plugged/black
 git checkout origin/stable -b stable
